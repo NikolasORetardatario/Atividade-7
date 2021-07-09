@@ -1,0 +1,37 @@
+programa
+{
+	
+     inclua biblioteca Util --> u
+     
+	funcao inicio()
+	{
+		inteiro valor[30]
+		inteiro numero
+		inteiro sorteio
+		
+		para(inteiro i = 0; i < 30; i++){
+		    sorteio = u.sorteia(0, 15)
+		    valor[i] = sorteio
+		}
+		
+		escreva("Digite um número de 0 à 15: ")
+		leia(numero)
+		
+		
+		enquanto(numero < 0 ou numero > 15){
+		    escreva("Digite apenas um número entre 0 e 15: ")
+		    leia(numero)
+		 
+		}
+		
+		inteiro m = 0
+		para(inteiro i = 0; i < 30; i++){
+		    se(numero == valor[i]){
+		    escreva("O número está na posição: ", i, "\n")
+		       m++
+		    }   
+		    }
+		    
+		    escreva("O número ",numero," foi repetido ", m, " vezes\n")
+	}
+}
