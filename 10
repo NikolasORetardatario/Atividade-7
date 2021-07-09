@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro valor[3][5]
+
+		para(inteiro i=0; i < 3; i++){
+		para(inteiro n=0; n < 5; n++){
+
+			escreva("Digite um número: ")
+				leia(valor[i][n])
+				limpa()
+
+			}
+		}
+	      para(inteiro i=0; i < 3; i++){
+		   para(inteiro n=0; n< 5; n++){
+				
+			se(valor[i][n] % 2 == 0){
+                escreva(valor[i][n], " é um número par", " - linha:", i," - coluna:", n, "\n")
+				} 
+		     }
+		}
+	}
+}
