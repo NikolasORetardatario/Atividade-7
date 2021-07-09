@@ -1,0 +1,49 @@
+programa 
+{
+	funcao inicio() {
+		
+    
+    inteiro listaImpares[5]
+    inteiro listaPares[5]
+    inteiro listaIntercalados[10]
+    inteiro numero = 0
+    
+    para(inteiro i = 0; i < 5; i++){
+        escreva("Digite um número ímpar: ")
+        leia(listaImpares[i])
+        limpa()
+	
+        se(listaImpares[i] % 2 == 0 ou listaImpares[i] == 0){
+            escreva("Digite apenas números ímpares: ")
+            leia(listaImpares[i])
+            limpa()
+        }
+    }
+    
+    para(inteiro i = 0; i < 5; i++){
+        escreva("Digite um número par: ")
+        leia(listaPares[i])
+        limpa()
+	
+        se(listaPares[i] % 2 == 1 ou listaPares[i] == 0){
+            escreva("Digite apenas números pares: ")
+            leia(listaPares[i])
+            limpa()
+        }
+    }
+    
+    para(inteiro i = 0; i < 10; i++){
+        listaIntercalados[i] = listaImpares[numero]
+        i = i + 1
+        listaIntercalados[i] = listaPares[numero]
+        numero = numero + 1
+    }
+    
+    para(inteiro i = 0; i< 9; i++){ 
+        escreva(listaIntercalados[i], " - ")
+	}
+	
+	escreva(listaIntercalados[9])
+	
+	}
+}
